@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- Projet MLP ----
+# Données du cours (liens symboliques vers talia_donnees, non redistribuées)
+donnees/
+# Modèles entraînés et caches de données préparées (régénérables)
+*.pt
+# Embeddings SGNS générés (3,7 Mo, régénérés par sgns.py)
+resultats/sgns_*.txt
