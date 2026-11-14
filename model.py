@@ -18,7 +18,7 @@ class MLPLangModel(nn.Module):
 
     def forward(self, x):                      
         e = self.emb(x)                        
-        e = e.reshape(e.size(0), -1)           
+        e = torch.concat([e[:, i] for i in range(self.k)], dim=1) 
         h = torch.relu(self.hidden(e))        
         return self.out(h)                     
 
