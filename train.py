@@ -22,7 +22,7 @@ from model import MLPLangModel
 
 
 def load_init_embeddings(path, vocab):
-    """Charge un autre fichier d'embeddings (ex. SGNS du TP1) aligné sur le vocabulaire
+    """Charge un autre fichier d'embeddings aligné sur le vocabulaire
     du modèle. Les tokens absents gardent un vecteur aléatoire."""
     other = load_vocab(path)
     if other.emb_dim != vocab.emb_dim:
@@ -40,7 +40,7 @@ def load_init_embeddings(path, vocab):
 
 @torch.no_grad()
 def evaluate(model, X, Y, device, batch_size=4096):
-    """Perte moyenne (en nats) sur (X, Y)."""
+    """Perte moyenne sur (X, Y)."""
     model.eval()
     loss_fn = nn.CrossEntropyLoss(reduction="sum")
     total = 0.0
@@ -110,10 +110,10 @@ def main():
     for epoch in range(1, args.epochs + 1):
         model.train()
         t0 = time.time()
-        perm = torch.randperm(N)                    # mélange des exemples à chaque epoch
+        perm = torch.randperm(N)                    
         total = 0.0
         n_batches = (N + args.batch_size - 1) // args.batch_size
-        report_every = max(1, n_batches // 20)       # affiche la progression tous les 5 %
+        report_every = max(1, n_batches // 20)       
         for b, i in enumerate(range(0, N, args.batch_size)):
             if b and b % report_every == 0:
                 el = time.time() - t0
@@ -122,9 +122,9 @@ def main():
             idx = perm[i:i + args.batch_size]
             x, y = X_tr[idx].to(device), Y_tr[idx].to(device)
             optimizer.zero_grad()
-            loss = loss_fn(model(x), y)             # graphe de calcul de la perte
-            loss.backward()                         # gradient
-            optimizer.step()                        # pas d'optimisation
+            loss = loss_fn(model(x), y)             
+            loss.backward()                         
+            optimizer.step()                        
             total += loss.item() * len(idx)
 
         train_loss = total / N
