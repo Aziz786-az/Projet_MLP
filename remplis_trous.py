@@ -13,7 +13,6 @@ from common import BOS, EOS, get_device, load_model, token_to_id
 
 
 def read_candidates(path):
-    """Un token par ligne (on prend le dernier champ, au cas où la ligne serait "indice token")."""
     with open(path, encoding="utf-8") as f:
         return [line.split()[-1] for line in f if line.strip()]
 
@@ -43,7 +42,7 @@ def score_candidates(model, vocab, tokens, hole, cands, k, device, contexte="com
     ids = [token_to_id(vocab, t) for t in tokens]
     cand_ids = [token_to_id(vocab, c) for c in cands]
     last = hole if contexte == "gauche" else min(hole + k, len(ids) - 1)
-    targets = range(hole, last + 1)             # positions prédites qui dépendent du trou
+    targets = range(hole, last + 1)             
     ctxs, tgts = [], []
     for c in cand_ids:
         seq = ids.copy()
@@ -59,7 +58,7 @@ def score_candidates(model, vocab, tokens, hole, cands, k, device, contexte="com
 
 def normalized_rank(scores, correct_idx):
     s = scores[correct_idx]
-    rank = int((scores > s).sum()) + 1          # ex aequo : on donne le meilleur rang
+    rank = int((scores > s).sum()) + 1          
     return rank, 1 - (rank - 1) / (len(scores) - 1)
 
 
@@ -88,7 +87,7 @@ def main():
     all_ranks = []
     for mask_file in args.masks:
         for pos, tokens in read_masks(mask_file):
-            hole = pos - args.base              # position du trou dans la ligne
+            hole = pos - args.base              
             if not 0 <= hole < len(tokens):
                 print(f"\n{mask_file} : position {pos} hors de la ligne ({len(tokens)} tokens), ignorée")
                 continue

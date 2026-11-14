@@ -101,7 +101,6 @@ def main():
     history = []
     best_val, bad_epochs = float("inf"), 0
 
-    # perte de départ (utile pour comparer les vitesses d'apprentissage, piste 3)
     v0 = evaluate(model, X_va, Y_va, device)
     print(f"epoch 0 | val {v0 / math.log(2):.4f} bits (PP {math.exp(v0):.2f})")
     history.append(dict(epoch=0, train=None, val=v0))
@@ -144,7 +143,7 @@ def main():
                 print(f"early stopping (pas d'amélioration depuis {args.patience} epochs)")
                 break
 
-    # on garde l'historique complet dans la sauvegarde et dans un json (courbes du rapport)
+    # on garde l'historique complet dans la sauvegarde et dans un json
     ckpt = torch.load(args.out, map_location="cpu")
     ckpt["history"] = history
     torch.save(ckpt, args.out)
