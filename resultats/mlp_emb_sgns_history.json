@@ -1,0 +1,42 @@
+{
+ "config": {
+  "emb_file": "donnees/bpe_embeddings_12k_32.txt",
+  "vocab_size": 11844,
+  "emb_dim": 32,
+  "k": 3,
+  "dh": 256,
+  "lr": 0.001,
+  "batch_size": 256,
+  "init": "file",
+  "init_from": "resultats/sgns_32.txt",
+  "train_emb": true,
+  "seed": 0
+ },
+ "history": [
+  {
+   "epoch": 0,
+   "train": null,
+   "val": 9.371755759339631
+  },
+  {
+   "epoch": 1,
+   "train": 3.9380951759347758,
+   "val": 3.707538500503549
+  },
+  {
+   "epoch": 2,
+   "train": 3.598901739467688,
+   "val": 3.6816508931434933
+  },
+  {
+   "epoch": 3,
+   "train": 3.5288249680478323,
+   "val": 3.6939392110918616
+  },
+  {
+   "epoch": 4,
+   "train": 3.494912610488421,
+   "val": 3.712840942640394
+  }
+ ]
+}

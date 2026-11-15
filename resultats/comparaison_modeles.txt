@@ -1,0 +1,18 @@
+mlp_base
+  log2(perplexité) : 5.4755   (valeur demandée par le sujet, = entropie croisée)
+  perplexité       : 44.49
+  perplexité sans les </s> de remplissage : 60.37 (39136 cibles triviales retirées sur 525985)
+  rang normalisé moyen (gauche) : 0.989 sur 3000 évaluations
+  rang normalisé moyen (complet) : 0.997 sur 3000 évaluations
+mlp_emb_random
+  log2(perplexité) : 5.6400   (valeur demandée par le sujet, = entropie croisée)
+  perplexité       : 49.87
+  perplexité sans les </s> de remplissage : 68.28 (39136 cibles triviales retirées sur 525985)
+  rang normalisé moyen (gauche) : 0.984 sur 3000 évaluations
+  rang normalisé moyen (complet) : 0.994 sur 3000 évaluations
+mlp_emb_sgns
+  log2(perplexité) : 5.3138   (valeur demandée par le sujet, = entropie croisée)
+  perplexité       : 39.77
+  perplexité sans les </s> de remplissage : 53.48 (39136 cibles triviales retirées sur 525985)
+  rang normalisé moyen (gauche) : 0.988 sur 3000 évaluations
+  rang normalisé moyen (complet) : 0.995 sur 3000 évaluations
