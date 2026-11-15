@@ -1,0 +1,6 @@
+11844 32
+donnees/test_12k.bpe : 19568 phrases, 584689 tokens, 525985 exemples
+entropie croisée : 5.6400 bits/token
+log2(perplexité) : 5.6400   (valeur demandée par le sujet, = entropie croisée)
+perplexité       : 49.87
+perplexité sans les </s> de remplissage : 68.28 (39136 cibles triviales retirées sur 525985)

@@ -1,0 +1,92 @@
+device : cuda
+11844 32
+donnees/train_12k.bpe : 4213605 exemples (cache)
+donnees/val_12k.bpe : 521300 exemples (cache)
+11844 32
+init depuis resultats/sgns_32.txt : 11844/11844 tokens trouvés
+|V|=11844 d=32 k=3 dh=256 | paramètres entraînables : 3,447,748
+epoch 0 | val 13.5206 bits (PP 11751.73)
+  epoch 1 :   5 % | perte 7.428 bits | reste ~0.9 min
+  epoch 1 :  10 % | perte 6.934 bits | reste ~0.8 min
+  epoch 1 :  15 % | perte 6.654 bits | reste ~0.8 min
+  epoch 1 :  20 % | perte 6.463 bits | reste ~0.7 min
+  epoch 1 :  25 % | perte 6.324 bits | reste ~0.7 min
+  epoch 1 :  30 % | perte 6.219 bits | reste ~0.6 min
+  epoch 1 :  35 % | perte 6.135 bits | reste ~0.6 min
+  epoch 1 :  40 % | perte 6.067 bits | reste ~0.5 min
+  epoch 1 :  45 % | perte 6.008 bits | reste ~0.5 min
+  epoch 1 :  50 % | perte 5.958 bits | reste ~0.4 min
+  epoch 1 :  55 % | perte 5.914 bits | reste ~0.4 min
+  epoch 1 :  60 % | perte 5.876 bits | reste ~0.3 min
+  epoch 1 :  65 % | perte 5.841 bits | reste ~0.3 min
+  epoch 1 :  70 % | perte 5.811 bits | reste ~0.3 min
+  epoch 1 :  75 % | perte 5.784 bits | reste ~0.2 min
+  epoch 1 :  80 % | perte 5.760 bits | reste ~0.2 min
+  epoch 1 :  85 % | perte 5.738 bits | reste ~0.1 min
+  epoch 1 :  90 % | perte 5.717 bits | reste ~0.1 min
+  epoch 1 :  95 % | perte 5.699 bits | reste ~0.0 min
+epoch 1 | train 5.6815 bits | val 5.3488 bits (PP 40.75) | 53s
+  -> meilleur modèle sauvegardé dans resultats/mlp_emb_sgns.pt
+  epoch 2 :   5 % | perte 5.159 bits | reste ~0.8 min
+  epoch 2 :  10 % | perte 5.158 bits | reste ~0.8 min
+  epoch 2 :  15 % | perte 5.164 bits | reste ~0.7 min
+  epoch 2 :  20 % | perte 5.167 bits | reste ~0.7 min
+  epoch 2 :  25 % | perte 5.171 bits | reste ~0.6 min
+  epoch 2 :  30 % | perte 5.170 bits | reste ~0.6 min
+  epoch 2 :  35 % | perte 5.173 bits | reste ~0.6 min
+  epoch 2 :  40 % | perte 5.175 bits | reste ~0.5 min
+  epoch 2 :  45 % | perte 5.177 bits | reste ~0.5 min
+  epoch 2 :  50 % | perte 5.178 bits | reste ~0.4 min
+  epoch 2 :  55 % | perte 5.178 bits | reste ~0.4 min
+  epoch 2 :  60 % | perte 5.179 bits | reste ~0.3 min
+  epoch 2 :  65 % | perte 5.181 bits | reste ~0.3 min
+  epoch 2 :  70 % | perte 5.183 bits | reste ~0.3 min
+  epoch 2 :  75 % | perte 5.184 bits | reste ~0.2 min
+  epoch 2 :  80 % | perte 5.185 bits | reste ~0.2 min
+  epoch 2 :  85 % | perte 5.187 bits | reste ~0.1 min
+  epoch 2 :  90 % | perte 5.188 bits | reste ~0.1 min
+  epoch 2 :  95 % | perte 5.190 bits | reste ~0.0 min
+epoch 2 | train 5.1921 bits | val 5.3115 bits (PP 39.71) | 52s
+  -> meilleur modèle sauvegardé dans resultats/mlp_emb_sgns.pt
+  epoch 3 :   5 % | perte 5.025 bits | reste ~0.8 min
+  epoch 3 :  10 % | perte 5.026 bits | reste ~0.8 min
+  epoch 3 :  15 % | perte 5.029 bits | reste ~0.7 min
+  epoch 3 :  20 % | perte 5.029 bits | reste ~0.7 min
+  epoch 3 :  25 % | perte 5.030 bits | reste ~0.6 min
+  epoch 3 :  30 % | perte 5.035 bits | reste ~0.6 min
+  epoch 3 :  35 % | perte 5.037 bits | reste ~0.6 min
+  epoch 3 :  40 % | perte 5.040 bits | reste ~0.5 min
+  epoch 3 :  45 % | perte 5.044 bits | reste ~0.5 min
+  epoch 3 :  50 % | perte 5.050 bits | reste ~0.4 min
+  epoch 3 :  55 % | perte 5.056 bits | reste ~0.4 min
+  epoch 3 :  60 % | perte 5.060 bits | reste ~0.3 min
+  epoch 3 :  65 % | perte 5.064 bits | reste ~0.3 min
+  epoch 3 :  70 % | perte 5.069 bits | reste ~0.3 min
+  epoch 3 :  75 % | perte 5.072 bits | reste ~0.2 min
+  epoch 3 :  80 % | perte 5.076 bits | reste ~0.2 min
+  epoch 3 :  85 % | perte 5.079 bits | reste ~0.1 min
+  epoch 3 :  90 % | perte 5.084 bits | reste ~0.1 min
+  epoch 3 :  95 % | perte 5.087 bits | reste ~0.0 min
+epoch 3 | train 5.0910 bits | val 5.3292 bits (PP 40.20) | 52s
+  epoch 4 :   5 % | perte 4.959 bits | reste ~0.9 min
+  epoch 4 :  10 % | perte 4.959 bits | reste ~0.8 min
+  epoch 4 :  15 % | perte 4.967 bits | reste ~0.8 min
+  epoch 4 :  20 % | perte 4.972 bits | reste ~0.7 min
+  epoch 4 :  25 % | perte 4.971 bits | reste ~0.6 min
+  epoch 4 :  30 % | perte 4.976 bits | reste ~0.6 min
+  epoch 4 :  35 % | perte 4.981 bits | reste ~0.6 min
+  epoch 4 :  40 % | perte 4.985 bits | reste ~0.5 min
+  epoch 4 :  45 % | perte 4.991 bits | reste ~0.5 min
+  epoch 4 :  50 % | perte 4.996 bits | reste ~0.4 min
+  epoch 4 :  55 % | perte 5.001 bits | reste ~0.4 min
+  epoch 4 :  60 % | perte 5.007 bits | reste ~0.3 min
+  epoch 4 :  65 % | perte 5.011 bits | reste ~0.3 min
+  epoch 4 :  70 % | perte 5.015 bits | reste ~0.3 min
+  epoch 4 :  75 % | perte 5.020 bits | reste ~0.2 min
+  epoch 4 :  80 % | perte 5.024 bits | reste ~0.2 min
+  epoch 4 :  85 % | perte 5.029 bits | reste ~0.1 min
+  epoch 4 :  90 % | perte 5.034 bits | reste ~0.1 min
+  epoch 4 :  95 % | perte 5.038 bits | reste ~0.0 min
+epoch 4 | train 5.0421 bits | val 5.3565 bits (PP 40.97) | 52s
+early stopping (pas d'amélioration depuis 2 epochs)
+meilleure perplexité validation : 39.71

@@ -1,0 +1,94 @@
+device : cuda
+11844 32
+donnees/train_12k.bpe : 156542 phrases, 4057063 tokens
+epoch 1 : 59% des tokens gardés, 6,606,203 paires
+   10 % | perte 3.9809 | 4s
+   20 % | perte 3.6194 | 5s
+   30 % | perte 3.4570 | 5s
+   40 % | perte 3.3516 | 6s
+   50 % | perte 3.2764 | 6s
+   60 % | perte 3.2211 | 7s
+   70 % | perte 3.1783 | 7s
+   80 % | perte 3.1442 | 8s
+   90 % | perte 3.1164 | 8s
+  100 % | perte 3.0934 | 9s
+epoch 1 | perte moyenne 3.0930
+          il : elle on hélène pourtant jeanne enfin silvine albine
+      maison : chambre ville place famille vallée bourse boutique salle
+       rouge : jaune sombre pâle souple blanc noir grise humide
+         dit : répondit murmurait répéta continua répétait reprit ajouta murmura
+        deux : trois quatre cinq placés plusieurs quatorze douze dernières
+       paris : sedan rouen magique intervalle plassans sud jugement rome
+epoch 2 : 59% des tokens gardés, 6,610,490 paires
+   10 % | perte 2.8535 | 0s
+   20 % | perte 2.8545 | 1s
+   30 % | perte 2.8545 | 1s
+   40 % | perte 2.8547 | 2s
+   50 % | perte 2.8540 | 2s
+   60 % | perte 2.8538 | 3s
+   70 % | perte 2.8532 | 3s
+   80 % | perte 2.8522 | 3s
+   90 % | perte 2.8514 | 4s
+  100 % | perte 2.8507 | 4s
+epoch 2 | perte moyenne 2.8507
+          il : elle on étienne silvine félicien renée hélène angélique
+      maison : ville bourse cuisine demeure pièce révolution boutique campagne
+       rouge : jaune noir blanc bleu bleue sombre pâle humide
+         dit : répondit répétait murmurait conclut reprit répéta murmura ajouta
+        deux : trois quatre quelques plusieurs cinq placés six douze
+       paris : sedan monde rouen pavé versailles musée camp recher
+epoch 3 : 59% des tokens gardés, 6,610,472 paires
+   10 % | perte 2.8091 | 0s
+   20 % | perte 2.8135 | 1s
+   30 % | perte 2.8154 | 1s
+   40 % | perte 2.8162 | 2s
+   50 % | perte 2.8170 | 2s
+   60 % | perte 2.8179 | 3s
+   70 % | perte 2.8182 | 3s
+   80 % | perte 2.8184 | 3s
+   90 % | perte 2.8184 | 4s
+  100 % | perte 2.8182 | 4s
+epoch 3 | perte moyenne 2.8182
+          il : elle on nana laurent seulement pourtant angélique cela
+      maison : boutique ville chambre fosse cuisine salle pièce maîtresse
+       rouge : jaune sombre bleue bleu grise blanc pâle noir
+         dit : répondit reprit conclut répétait murmura murmurait déclara balbutia
+        deux : trois quatre plusieurs quelques les derniers passés six
+       paris : sedan monde rome plassans recher vatican quartier versailles
+epoch 4 : 59% des tokens gardés, 6,605,602 paires
+   10 % | perte 2.7899 | 0s
+   20 % | perte 2.7928 | 1s
+   30 % | perte 2.7942 | 1s
+   40 % | perte 2.7954 | 2s
+   50 % | perte 2.7969 | 2s
+   60 % | perte 2.7974 | 3s
+   70 % | perte 2.7979 | 3s
+   80 % | perte 2.7980 | 3s
+   90 % | perte 2.7981 | 4s
+  100 % | perte 2.7979 | 4s
+epoch 4 | perte moyenne 2.7979
+          il : elle on pourtant saccard seulement laurent nana gervaise
+      maison : ville fosse cuisine boutique pièce famille maîtresse salle
+       rouge : jaune sombre blanc bleuâtre bleu noir bleue vert
+         dit : répondit conclut reprit murmurait répétait déclara murmura continua
+        deux : trois quatre plusieurs quelques les douze cinq sept
+       paris : sedan village monde puits château pavé musée quartier
+epoch 5 : 59% des tokens gardés, 6,610,486 paires
+   10 % | perte 2.7769 | 0s
+   20 % | perte 2.7786 | 1s
+   30 % | perte 2.7796 | 1s
+   40 % | perte 2.7798 | 2s
+   50 % | perte 2.7797 | 2s
+   60 % | perte 2.7802 | 2s
+   70 % | perte 2.7804 | 3s
+   80 % | perte 2.7804 | 3s
+   90 % | perte 2.7806 | 4s
+  100 % | perte 2.7804 | 4s
+epoch 5 | perte moyenne 2.7804
+          il : elle on pourtant seulement saccard gervaise nana étienne
+      maison : ville fosse cuisine boutique chambre pièce baraque famille
+       rouge : jaune sombre blanc noir bleu bleue bleuâtre grise
+         dit : répondit murmurait répétait conclut reprit murmura déclara continua
+        deux : trois quatre plusieurs quelques cinq les douze cents
+       paris : sedan village monde château plassans rome musée rouen
+embeddings SGNS écrits dans resultats/sgns_32.txt (11844 tokens, dimension 32)

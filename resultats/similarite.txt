@@ -1,0 +1,63 @@
+
+=== donnees/Le_comte_de_Monte_Cristo.100.sim : 100 triplets, 141 mots
+  découpage : armateur = arma #teur, cœur = coeur
+                        source | réussis/couverts
+                       sgns_32 |  87/100 = 0.870
+         bpe_embeddings_12k_32 |  93/100 = 0.930
+                mlp_emb_random |  59/100 = 0.590
+                  mlp_emb_sgns |  87/100 = 0.870
+
+=== donnees/sim_couverts84.sim : 84 triplets, 128 mots
+                        source | réussis/couverts
+                       sgns_32 |  74/ 84 = 0.881
+         bpe_embeddings_12k_32 |  79/ 84 = 0.940
+                mlp_emb_random |  53/ 84 = 0.631
+                  mlp_emb_sgns |  73/ 84 = 0.869
+
+=== donnees/sim_inconnus16.sim : 16 triplets, 31 mots
+  découpage : armateur = arma #teur, cœur = coeur
+                        source | réussis/couverts
+                       sgns_32 |  13/ 16 = 0.812
+         bpe_embeddings_12k_32 |  14/ 16 = 0.875
+                mlp_emb_random |   6/ 16 = 0.375
+                  mlp_emb_sgns |  14/ 16 = 0.875
+
+=== voisins communs (10 plus proches, 1000 tokens les plus fréquents)
+                       sgns_32 / bpe_embeddings_12k_32        : 0.392  (1000 tokens)
+                       sgns_32 / mlp_emb_random               : 0.048  (1000 tokens)
+                       sgns_32 / mlp_emb_sgns                 : 0.399  (1000 tokens)
+         bpe_embeddings_12k_32 / mlp_emb_random               : 0.039  (1000 tokens)
+         bpe_embeddings_12k_32 / mlp_emb_sgns                 : 0.271  (1000 tokens)
+                mlp_emb_random / mlp_emb_sgns                 : 0.064  (1000 tokens)
+
+=== 10 plus proches voisins
+  il
+                         sgns_32 : elle on pourtant seulement saccard gervaise nana étienne laurent zoé
+           bpe_embeddings_12k_32 : elle on emma nana même étienne deslauriers laurent gervaise fontan
+                  mlp_emb_random : elle clorinde henriette mari saccard hi charles éminence #mat maheude
+                    mlp_emb_sgns : elle on zingueur saccard claude étienne gavard laurent hélène maurice
+  maison
+                         sgns_32 : ville fosse cuisine boutique chambre pièce baraque famille salle maîtresse
+           bpe_embeddings_12k_32 : chambre ville cuisine boutique place campagne salle fosse baraque pièce
+                  mlp_emb_random : lâché soldats #leur demie sangu toilette #ham fourneau foudre caves
+                    mlp_emb_sgns : boutique ville fosse cuisine chambre pièce campagne baraque route table
+  rouge
+                         sgns_32 : jaune sombre blanc noir bleu bleue bleuâtre grise vert humide
+           bpe_embeddings_12k_32 : jaune bleue blanc mousseline grise bleu blanche noir chauve mince
+                  mlp_emb_random : lourd pavé habitudes ami guir nocturne désign trouvais prêtres digne
+                    mlp_emb_sgns : bleu jaune vert blanc humide gris pâle bleuâtre noir cendre
+  dit
+                         sgns_32 : répondit murmurait répétait conclut reprit murmura déclara continua balbutia répéta
+           bpe_embeddings_12k_32 : répétait reprit conclut murmura disait cria expliqua déclara répondit murmurait
+                  mlp_emb_random : reprit croyait #xe répétait forcheville tard sentant feuill résum disait
+                    mlp_emb_sgns : répondit répétait conclut murmurait reprit disait criait ajouta demanda déclara
+  deux
+                         sgns_32 : trois quatre plusieurs quelques cinq les douze cents six passés
+           bpe_embeddings_12k_32 : trois quatre tous les passés plusieurs quelques cinq régulièrement petits
+                  mlp_emb_random : cents cinq longues chaudes elles dix ils huguen #aines nos
+                    mlp_emb_sgns : trois quatre cinq six plusieurs sept douze huit quinze quatorze
+  paris
+                         sgns_32 : sedan village monde château plassans rome musée rouen pays quartier
+           bpe_embeddings_12k_32 : plassans rome sedan rognes campagne balbec boulogne marché décembre versailles
+                  mlp_emb_random : #8 obus souriante #llic #t #ère #onie mère ça défiance
+                    mlp_emb_sgns : monde printemps sedan vatican pays personnel midi public hiver plassans
